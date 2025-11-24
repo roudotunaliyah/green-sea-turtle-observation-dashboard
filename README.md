@@ -77,6 +77,7 @@ Key steps included:
 
 Example of core cleaning script:
 
+```python
 df = df.dropna(subset=["decimalLatitude", "decimalLongitude"])
 df = df[(df["decimalLatitude"] != 0) & (df["decimalLongitude"] != 0)]
 
@@ -85,6 +86,7 @@ df = df[df["occurrenceStatus"] == "PRESENT"]
 df = df.dropna(subset=["year"])
 
 df.to_csv("Chelonia_mydas_for_tableau.csv", index=False)
+---
 
 ---
 
