@@ -29,17 +29,18 @@ https://public.tableau.com/views/tableauuuu_17639082904870/Dashboard1
 
 ## Repository Structure
 
-.
 ├── data/
-│   └── Chelonia_mydas_for_tableau.csv
+│   └── Chelonia_mydas_for_tableau.csv        # Cleaned dataset used in Tableau
+│
 ├── notebooks/
-│   └── data_cleaning.ipynb
+│   └── data_cleaning.ipynb                   # Python notebook for cleaning and wrangling
+│
 ├── images/
-│   ├── dashboard_full.png
-│   ├── global_map.png
-│   └── indonesia_hotspot.png
+│   ├── dashboard_full.png                    # Screenshot of the final dashboard
+│   ├── global_map.png                        # Global distribution map
+│   └── indonesia_hotspot.png                 # Indonesia hotspot visualization
+│
 └── README.md
-
 
 
 ---
@@ -60,9 +61,11 @@ Example of core cleaning script:
 
 df = df.dropna(subset=["decimalLatitude", "decimalLongitude"])
 df = df[(df["decimalLatitude"] != 0) & (df["decimalLongitude"] != 0)]
+
 df = df.drop_duplicates(subset=["gbifID"])
 df = df[df["occurrenceStatus"] == "PRESENT"]
 df = df.dropna(subset=["year"])
+
 df.to_csv("Chelonia_mydas_for_tableau.csv", index=False)
 
 ---
@@ -71,16 +74,16 @@ df.to_csv("Chelonia_mydas_for_tableau.csv", index=False)
 The Tableau dashboard consists of four main visualization components:
 
 1. Global Distribution Map
-Displays worldwide observation points based on valid latitude and longitude coordinates.
+Shows worldwide observation points based on valid latitude and longitude coordinates.
 
 2. Top Countries by Observation Records
-Shows countries with the highest number of recorded sightings.
+Highlights countries with the highest number of recorded sightings.
 
 3. Observation Trend Over Time
-Illustrates temporal variation in Green Sea Turtle observations across two decades.
+Displays temporal variation in Green Sea Turtle observations across two decades.
 
 4. Indonesia Regional Hotspot Map
-Highlights provinces and coastal regions in Indonesia with the highest monitoring activity.
+Identifies key provinces and coastal regions with the highest monitoring activity.
 
 ---
 
