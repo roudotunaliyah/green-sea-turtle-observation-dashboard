@@ -31,17 +31,15 @@ https://public.tableau.com/views/tableauuuu_17639082904870/Dashboard1
 
 .
 ├── data/
-│ └── Chelonia_mydas_for_tableau.csv
-│
+│   └── Chelonia_mydas_for_tableau.csv
 ├── notebooks/
-│ └── data_cleaning.ipynb
-│
+│   └── data_cleaning.ipynb
 ├── images/
-│ ├── dashboard_full.png
-│ ├── global_map.png
-│ └── indonesia_hotspot.png
-│
+│   ├── dashboard_full.png
+│   ├── global_map.png
+│   └── indonesia_hotspot.png
 └── README.md
+
 
 
 ---
@@ -60,13 +58,12 @@ Key steps included:
 
 Example of core cleaning script:
 
-```python
 df = df.dropna(subset=["decimalLatitude", "decimalLongitude"])
 df = df[(df["decimalLatitude"] != 0) & (df["decimalLongitude"] != 0)]
 df = df.drop_duplicates(subset=["gbifID"])
 df = df[df["occurrenceStatus"] == "PRESENT"]
 df = df.dropna(subset=["year"])
-df.to_csv("Chelonia_mydas_for_tableau.csv", index=False) ```
+df.to_csv("Chelonia_mydas_for_tableau.csv", index=False)
 
 ---
 
