@@ -70,7 +70,7 @@ df.to_csv("Chelonia_mydas_for_tableau.csv", index=False)
 
 ---
 
-Visualizations
+## Visualizations
 The Tableau dashboard consists of four main visualization components:
 
 1. Global Distribution Map
@@ -87,7 +87,7 @@ Highlights provinces and coastal regions in Indonesia with the highest monitorin
 
 ---
 
-Key Insights
+## Key Insights
 
 Southeast Asia, particularly Indonesia and Malaysia, shows the highest concentration of observation records.
 Australia and Pacific regions contribute significantly to global monitoring datasets.
@@ -97,7 +97,7 @@ Indonesia’s hotspots include NTT, NTB, Sulawesi, Papua, Maluku, and parts of K
 
 ---
 
-Tools and Technologies
+## Tools and Technologies
 
 Python (pandas, openpyxl)
 Tableau Public
@@ -106,13 +106,13 @@ GitHub for documentation and version control
 
 ---
 
-Dataset Source
+## Dataset Source
 GBIF.org (2025). GBIF Occurrence Download — Chelonia mydas (Linnaeus, 1758).
 Open-access biodiversity dataset licensed under CC-BY.
 
 ---
 
-About the Author
+## About the Author
 My name is Roudotun Aliyah, a final-year Biology student transitioning into the field of Data Analytics.
 My interests include environmental data, biodiversity informatics, and ecological analytics, with a focus on how data can support conservation and research.
 
