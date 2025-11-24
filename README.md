@@ -27,22 +27,39 @@ https://public.tableau.com/views/tableauuuu_17639082904870/Dashboard1
 
 ---
 
-## Repository Structure
-.
+## Dashboard Preview
 
+Below is a preview of the full Tableau dashboard:
+
+![Dashboard Overview](images/dashboard_full.png)
+
+### Additional Visualizations
+
+**Global Distribution Map**  
+![Global Map](images/global_map.png)
+
+**Indonesia Hotspot Map**  
+![Indonesia Hotspot](images/indonesia_hotspot.png)
+
+---
+
+## Repository Structure
+
+```
+.
 ├── data/
-│   └── Chelonia_mydas_for_tableau.csv        # Cleaned dataset used in Tableau
+│   └── Chelonia_mydas_for_tableau.csv
 │
 ├── notebooks/
-│   └── data_cleaning.ipynb                   # Python notebook for cleaning and wrangling
+│   └── data_cleaning.ipynb
 │
 ├── images/
-│   ├── dashboard_full.png                    # Screenshot of the final dashboard
-│   ├── global_map.png                        # Global distribution map
-│   └── indonesia_hotspot.png                 # Indonesia hotspot visualization
+│   ├── dashboard_full.png
+│   ├── global_map.png
+│   └── indonesia_hotspot.png
 │
 └── README.md
-
+```
 
 ---
 
@@ -104,35 +121,6 @@ Python (pandas, openpyxl)
 Tableau Public
 Excel/CSV
 GitHub for documentation and version control
-
----
-
-## How to Reproduce
-
-Clone this repository:
-git clone https://github.com/roudotunaliyah/green-sea-turtle-observation-dashboard.git
-
-Open the notebook:
-notebooks/data_cleaning.ipynb
-
-Run all cells to reproduce the data cleaning process.
-
-Import the cleaned dataset:
-data/Chelonia_mydas_for_tableau.csv
-
-into Tableau Public or Tableau Desktop.
-
-Recreate the dashboard or explore the visualizations provided.
-
----
-
-## Future Enhancements
-
-Add environmental variables (SST, salinity, ocean depth) for ecological correlation
-Build species distribution modeling (SDM) or habitat suitability mapping
-Develop a multi-species comparison dashboard
-Add temporal animation for year-over-year visualization
-Implement a web dashboard using Plotly Dash or Streamlit
 
 ---
 
