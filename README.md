@@ -110,17 +110,14 @@ GitHub for documentation and version control
 ## How to Reproduce
 
 Clone this repository:
-
 git clone https://github.com/roudotunaliyah/green-sea-turtle-observation-dashboard.git
 
 Open the notebook:
-
 notebooks/data_cleaning.ipynb
 
 Run all cells to reproduce the data cleaning process.
 
 Import the cleaned dataset:
-
 data/Chelonia_mydas_for_tableau.csv
 
 into Tableau Public or Tableau Desktop.
@@ -129,7 +126,7 @@ Recreate the dashboard or explore the visualizations provided.
 
 ---
 
-Future Enhancements
+## Future Enhancements
 
 Add environmental variables (SST, salinity, ocean depth) for ecological correlation
 Build species distribution modeling (SDM) or habitat suitability mapping
