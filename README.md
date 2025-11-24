@@ -68,17 +68,24 @@ df = df[df["occurrenceStatus"] == "PRESENT"]
 df = df.dropna(subset=["year"])
 df.to_csv("Chelonia_mydas_for_tableau.csv", index=False)
 
-Visualizations
+---
 
+Visualizations
 The Tableau dashboard consists of four main visualization components:
+
 1. Global Distribution Map
 Displays worldwide observation points based on valid latitude and longitude coordinates.
+
 2. Top Countries by Observation Records
 Shows countries with the highest number of recorded sightings.
+
 3. Observation Trend Over Time
 Illustrates temporal variation in Green Sea Turtle observations across two decades.
+
 4. Indonesia Regional Hotspot Map
-Highlights provinces and coastal areas in Indonesia with the highest monitoring activity.
+Highlights provinces and coastal regions in Indonesia with the highest monitoring activity.
+
+---
 
 Key Insights
 
@@ -88,18 +95,25 @@ Western Atlantic regions such as Brazil and Mexico also appear as strong observa
 Observation peaks around 2013–2014 likely correspond to bulk dataset uploads to GBIF.
 Indonesia’s hotspots include NTT, NTB, Sulawesi, Papua, Maluku, and parts of Kalimantan Timur.
 
+---
+
 Tools and Technologies
+
 Python (pandas, openpyxl)
 Tableau Public
 Excel/CSV
 GitHub for documentation and version control
 
-Dataset Source
+---
 
+Dataset Source
 GBIF.org (2025). GBIF Occurrence Download — Chelonia mydas (Linnaeus, 1758).
 Open-access biodiversity dataset licensed under CC-BY.
 
-## About the Author
+---
 
-My name is Roudotun Aliyah, a final-year Biology student transitioning into the field of Data Analytics.  
+About the Author
+My name is Roudotun Aliyah, a final-year Biology student transitioning into the field of Data Analytics.
 My interests include environmental data, biodiversity informatics, and ecological analytics, with a focus on how data can support conservation and research.
+
+---
