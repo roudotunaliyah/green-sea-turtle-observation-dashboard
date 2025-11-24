@@ -85,9 +85,7 @@ df = df.drop_duplicates(subset=["gbifID"])
 df = df[df["occurrenceStatus"] == "PRESENT"]
 df = df.dropna(subset=["year"])
 
-df.to_csv("Chelonia_mydas_for_tableau.csv", index=False)` ``` `
-
----
+df.to_csv("Chelonia_mydas_for_tableau.csv", index=False)
 
 ---
 
